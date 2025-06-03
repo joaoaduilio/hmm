@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #fff0f5;
+  font-family: 'Dancing Script', cursive;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 999;
+}
+#mensagem {
+  font-size: 28px;
+  padding: 40px;
+  white-space: pre-wrap;
+  max-width: 800px;
+  margin: 120px auto;
+  color: #8b0000;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
