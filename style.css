@@ -1,7 +1,8 @@
 body {
   margin: 0;
-  overflow: hidden;
-  background: #fff0f5;
+  overflow-x: hidden;
+  background: url('https://i.imgur.com/vFYINjW.jpg') no-repeat center center fixed;
+  background-size: cover;
   font-family: 'Dancing Script', cursive;
 }
 canvas {
@@ -16,9 +17,56 @@ canvas {
   padding: 40px;
   white-space: pre-wrap;
   max-width: 800px;
-  margin: 120px auto;
+  margin: 120px auto 30px;
   color: #8b0000;
   text-align: center;
   z-index: 2;
   position: relative;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+}
+button#abrirCarta {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 30px;
+  font-size: 24px;
+  background: linear-gradient(45deg, #ff69b4, #ff1493);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+button#abrirCarta:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #ff85c1, #e0139a);
+}
+.carta {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 30px;
+  background: #fffaf0;
+  color: #333;
+  font-size: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+  text-align: center;
+  background-image: url('https://i.imgur.com/E5kxXY8.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  display: none;
+}
+.carta.ativa {
+  opacity: 1;
+  transform: translateY(0);
+  display: block;
+}
+.decoracao {
+  font-size: 32px;
+  margin-bottom: 15px;
 }
